@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Handwriting',cursive;
+}
+
+a{
+    font-family: 'Lucida Handwriting',cursive;
+    color: green;
+}
+
+a:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+form{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 110%;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-family: 'Lucida Handwriting',cursive;
+}
+
+.text h1{
+    text-align: center;
+    font-family: 'Lucida Handwriting',cursive;
+}
+
+.text{
+    font-family:'Lucida Handwriting',cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+#all{
+    width: 80%;
+    border-radius: 5px;
+}

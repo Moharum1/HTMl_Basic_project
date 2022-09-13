@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1 class="text">All Pages</h1>
+    <div style="text-align: center">
+        <img  src="{% static 'images/wiki.png' %}" alt="wiki" width="200" height="200">
+    </div>
+    <ul>
+        {% for entry in entries %}
+            <li style="font-size: 25px"><a href="{% url "names" entry %}"> {{ entry }} </a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+    <p style="text-align: center ; font-size: 24px ">To create a new Page you must fill the <strong>Title</strong>  and <strong>Content</strong> forms</p>
+    <form action="{% url "swaPage" %}" method="get">
+              <h1>Title :</h1>
+              <label style="padding-left: 5vw ; padding-right: 5vw">
+                  <input  style="width: 70vw ; height: 5vh ;border-radius:5px" type="text" name="title" placeholder="NewPageTitle">
+              </label>
+              <h1>Content :</h1>
+              <br>
+                  <label style="padding-left: 5vw ; padding-right: 5vw">
+                  <textarea style="height:30vh ;width: 70vw ;border-radius:5px" name="Container" placeholder="NewPageContent" rows="12" cols="50" ></textarea>
+                  </label>
+              </br>
+              <label style="display: grid">
+                  <input style="font-size:24px;margin: auto ; border-radius:5px" type="submit">
+              </label>
+              {% if error == 0 %}
+                  <p style="color: red ; text-align: center">This blog already exist</p>
+              {% endif %}
+    </form>
+{% endblock %}
