@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+{% load Markdown %}
+
+{% block title %}
+    Title
+{% endblock %}
+
+{% block body %}
+    <a style="text-align: center" href="{% url "Edit" Content %}">Edit</a>
+    {{ entry | markdown | safe}}
+{% endblock %}

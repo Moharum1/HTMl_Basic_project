@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit page
+{% endblock %}
+
+{% block body %}
+    <form style="display: block">
+        <br>
+           <label style="padding-left: 5vw">
+               <textarea style="height:70vh;width: 70vw ;border-radius:5px" name="text" rows="12" cols="50" >{{ Content }}</textarea>
+           </label>
+        </br>
+        <label style="display: grid">
+            <input style="font-size:24px;margin: auto ; border-radius:5px" type="submit">
+        </label>
+    </form>
+{% endblock %}
